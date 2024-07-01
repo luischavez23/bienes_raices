@@ -227,7 +227,7 @@ h3{
     background: linear-gradient(to top, #000000ca, #f2f2f276), url("../img/hero_bg_3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -597,6 +597,15 @@ h3{
     outline: .1rem dashed var(--black); 
 }
 
+.team__name{
+    margin: 0;
+}
+
+.team__position,
+.team__description{
+    color: var(--darkGray);
+}
+
 .team__card{
     display: flex;
     flex-direction: column;
@@ -606,6 +615,7 @@ h3{
     border-radius: 1rem;
     margin-top: 5rem;
     margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .team__info{
@@ -643,19 +653,50 @@ h3{
 
 @media (min-width: 768px){
     .team__description{
-        height: 20rem;
+        height: 22rem;
     }
 }
 
 /* Contacto */
+
 .contact{
     margin: 2rem 0;
+}
+
+.hero__contact{
+    background: linear-gradient(to top, #000000ca, #f2f2f276), url("../img/hero_bg_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact__container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .contact__container{
+        flex-direction: row-reverse;
+    }
+  
+}
+
+.contact__text{
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .contact__form{
     background-color: var(--white);
     padding: 3rem;
     border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .contact__data{
@@ -687,7 +728,6 @@ h3{
     border-radius: .5rem;
 }
 
-
 .contact__btn{
     padding: 1rem;
     text-align: center;
@@ -698,4 +738,86 @@ h3{
     .contact__btn{
         width: 15rem;
     }    
+}
+
+.details__container{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+.details__info{
+    margin-bottom: 2rem ;
+    margin-right: 2rem;
+}
+
+.details__icon{
+    font-size: 2rem;
+    background-color: var(--blueNavy);
+    text-align: center;
+    width: 4rem;
+    height: 4rem;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.details__title,
+.details__text{
+    margin: 0;
+}
+
+.details__text{
+    margin-left: 6rem;
+}
+
+@media (min-width: 768px){
+    .details__text{
+        margin-left: 0;
+    }
+}
+
+/* Services section */
+.services__container{
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.services__card{
+    padding: 3rem;
+    border-radius: 2rem;
+    color: var(--blueNavy);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.services__btn{
+    padding: 1rem;
+    width: 10rem;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .services__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px){
+    .services__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.services__icon{
+    margin: 0 auto;
+    font-size: 4rem;
+}
+
+.services__title,
+.services_description{
+    margin: 0;
 }
