@@ -8,7 +8,7 @@ Bienvenido al repositorio del sitio web de nuestra agencia de bienes raíces. Es
 - **Título Impactante**: *"Tu futuro comienza aquí"*
 - **Propiedades en Ventas**
 - **Nuestros agentes**
-- **Llamado a la Acción**: *"Completa el formulario de contacto y uno de nuestros agentes se pondrá en contacto contigo."*
+Nuestros agentes se pondrá en contacto contigo."*
 
 ### **Sobre Nosotros**
 - **Historia y Misión de la Agencia**
@@ -28,10 +28,5 @@ Bienvenido al repositorio del sitio web de nuestra agencia de bienes raíces. Es
 ### **Contacto**
 - **Formulario de Contacto**
 - **Información de Contacto**:
-  - **Teléfono**: [Número de teléfono]
-  - **Correo Electrónico**: [Correo electrónico]
-
-## **Contacto**
-
-- **Correo Electrónico**: [contacto@agenciabienesraices.com](mailto:contacto@agenciabienesraices.com)
-- **Teléfono**: +123 456 7890
+  - **Teléfono**
+  - **Correo Electrónico**
