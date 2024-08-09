@@ -37,9 +37,11 @@ a{
 }
 
 img{
-    width: 100%;
-    height: auto;
-    background-size: cover;
+    width: 100%;       
+    height: auto;      
+    max-width: 40rem; 
+    max-height: 40rem;   
+    object-fit: cover;
 }
 
 li{
@@ -315,7 +317,7 @@ h3{
 .house__city{
     font-size: 2rem;
     font-weight: 900;
-    margin: 0;
+    margin: 1rem 0;
 }
 
 .house__content{
@@ -816,3 +818,63 @@ h3{
 .services_description{
     margin: 0;
 }
+
+/* Alert */
+
+.alert__text{
+    background-color: var(--primary);
+    border-radius: 1rem;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Modal */
+
+.modal__container{
+    display: none;
+    position: fixed;
+    background-color: #000000b5;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    overflow: auto;
+    transition: all .6s;
+}
+
+.modal__content{
+    background-color: var(--secondary);
+    border-radius: 2rem;
+    margin: 3rem auto;
+    padding: 2rem 4rem 5rem 4rem;
+    width: 80%;
+}
+
+.modal__header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__close{
+    font-size: 4rem;
+    font-weight: bold;
+    float: right;
+    transition: all .3s;
+}
+
+.modal__close:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    .modal__info{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+  

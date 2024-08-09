@@ -40,17 +40,17 @@
                 <form class="contact__form">
                     <h3 class="contact__text">Deja tus datos en el formulario de contacto y uno de nuestros agentes te responderá en breve.</h3>
                     <div class="contact__data">
-                        <input type="text" name="name" id="name" class="contact__name" placeholder="Nombre completo">
-                        <input type="email" name="email" id="email" placeholder="Correo">
+                        <input type="text" name="name" id="name" class="contact__name" placeholder="Nombre completo" autocomplete="name" required>
+                        <input type="email" name="email" id="email" placeholder="Correo" autocomplete="email" required>
                     </div>
                     <div class="contact__data">
-                        <input type="text" name="subject" id="subject" placeholder="Asunto">
+                        <input type="text" name="subject" id="subject" placeholder="Asunto" required>
                     </div>
                     <div class="contact__information">
-                        <textarea name="message" id="message" placeholder="Mensaje" class="contact__message"></textarea>
+                        <textarea name="message" id="message" placeholder="Mensaje" class="contact__message" required></textarea>
                     </div>
                     <div class="contact__button">
-                        <a class="contact__btn button">Enviar</a>
+                        <button class="contact__btn button" type="submit" >Enviar</button>
                     </div>
                 </form>
             </div><!-- Form -->
@@ -114,5 +114,6 @@
         </div>
         <p class="footer__copy">&copy; Bienes Raíces 2024. Desarrollado por Luis Pablo Chávez</p>
      </footer>
+     <script type="module" src="./js/contact.js"></script>
     </body>
 </html>
